@@ -26,12 +26,21 @@ export const UIScreens = [
       return optionalRequire(() => require('./CommunitySegmentedControlScreen'));
     },
   },
+
   {
     name: 'Community Slider replacement',
     route: 'ui/community-slider',
     options: {},
     getComponent() {
       return optionalRequire(() => require('./CommunitySliderScreen'));
+    },
+  },
+  {
+    name: 'Community PagerView replacement',
+    route: 'ui/community-pager-view',
+    options: {},
+    getComponent() {
+      return optionalRequire(() => require('./CommunityPagerViewScreen'));
     },
   },
 ];
