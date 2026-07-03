@@ -16,13 +16,22 @@ In this chapter, we'll create a development build that can run on an iOS Simulat
 
 Development builds for iOS Simulators are generated in the **.app** format which is different from iOS devices.
 
-<VideoBoxLink
+<VideoBoxLinkexp://06c2e2b1-2b9c-47cd-8ef4-89cffea0868b-00-2zoby7q1j9m6.expo.pike.replit.dev
   videoId="SgL97PFZctg"
   title="Watch: Creating a development build for iOS Simulator"
   description="Learn how to create a simulator build profile in eas.json and run a development build on iOS Simulator."
 />
 
----
+---{
+  "ios-simulator": {
+    /* @info The `extends` keyword inherits properties from the `development` profile. */
+    "extends": "development",
+    /* @end */
+    "ios": {
+      "simulator": true
+    }
+  }
+}
 
 ## Create a simulator build profile in eas.json
 
